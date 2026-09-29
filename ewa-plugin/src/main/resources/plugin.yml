@@ -1,0 +1,29 @@
+name: ElementalWeaponArts
+version: ${project.version}
+main: com.example.ewa.ElementalWeaponArts
+api-version: '1.21'
+description: Six elements, each tied to a vanilla weapon. Essence pool, cooldowns, conduit powers.
+commands:
+  element:
+    description: Elemental Weapon Arts main command
+    usage: /element <set|power1|power2|power3|conduit|status|enchant>
+    aliases: [ewa]
+  power1:
+    description: Use your element's Power 1
+    usage: /power1
+  power2:
+    description: Use your element's Power 2
+    usage: /power2
+  power3:
+    description: Use your element's Power 3
+    usage: /power3
+  conduit:
+    description: Use your element's Conduit Power (hold your conduit weapon)
+    usage: /conduit
+permissions:
+  ewa.use:
+    description: Choose an element and use abilities
+    default: true
+  ewa.enchant:
+    description: Apply Conduit enchantments to held items
+    default: op
